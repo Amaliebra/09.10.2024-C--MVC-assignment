@@ -1,3 +1,5 @@
+using System;
+using System.Collections.Generic;
 public class View
 {
     public void DisplayGames(List<Game> games)
@@ -5,7 +7,7 @@ public class View
         Console.WriteLine("Game list:");
         foreach (var game in games)
         {
-            Console.WriteLine($"Title: {game.Title}, Year:{game.Year}, Genre:{game.Genre}");
+            Console.WriteLine($"Title: {game.Title}, Year: {game.Year}, Genre: {game.Genre}");
         }
     }
 
