@@ -1,8 +1,8 @@
-using System.ComponentModel;
-
 public class Controller
 {
+    //private field, for internal use. Will manage the data.
     private Model _model;
+    //Will handle input/output
     private View _view;
 
     public Controller(Model model, View view)
@@ -10,7 +10,7 @@ public class Controller
         _model = model;
         _view = view;
     }
-
+    //contains main logic of the program. Will run until exit is typed in console.
     public void Run()
     {
         bool exit = false;
